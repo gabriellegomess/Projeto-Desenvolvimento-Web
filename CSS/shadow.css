@@ -1,0 +1,105 @@
+/*definindo as propriedades do header*/
+header {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor da fonte como branca */
+    background-image: url(../img/SHADOW/footer.jpeg);
+    margin-top: 20px;
+    padding: 15px;
+    height: 15vh;
+    border-radius: 5px;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 15px;   
+    
+}
+header a:hover{
+    color: white;
+}
+header a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor da fonte como branca */
+}
+
+/*definindo as propriedades do footer*/
+footer{
+    background-image: url(../img/SHADOW/footer.jpeg);
+    margin-top: 100px;
+    padding: 15px;
+    height: 15vh;
+    border-radius: 5px;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    color: red; /* Define a cor da fonte, por exemplo, vermelho */
+}
+footer a:hover{
+    color: white;
+}
+
+footer a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor da fonte como branca */
+}
+
+/*definindo as propriedades do body*/
+body {
+    background-image: url(../img/SHADOW/background.jpeg);
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o body */
+    background-attachment: fixed; /* Fixa a imagem para que ela não role com a página */
+    background-blend-mode: overlay; /* Mescla a cor de fundo com a imagem */
+  }
+ 
+ /*definindo as propriedades das classes criadas*/ 
+.primeira{
+    margin-top: 200px;
+    background-color: rgba(148, 147, 147, 0.514);
+    position: absolute;
+    margin-left: 65%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.829);
+    text-shadow: 4px 4px 10px rgb(12, 12, 12);
+    font-size: 17px;
+}
+
+.segunda{
+    margin-top: 600px;
+    background-color: rgba(148, 147, 147, 0.514);
+    position: absolute;
+    margin-left: 65%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.829);
+    text-shadow: 4px 4px 10px rgb(12, 12, 12);
+    font-size: 17px;
+}
+
+.imagem{
+    margin-top: 900px;
+    margin-left: 500px;
+
+}
+
+.ordem{
+    margin-top: 90px;
+    margin-left: 400px;
+}
+
+/*definindo a propriedade do video do ytb*/
+iframe{
+    margin-top: 90px;
+    margin-left: 500px;
+}
+
+.quinta{
+    margin-top: 200px;
+    background-color: rgba(148, 147, 147, 0.514);
+    position: absolute;
+    margin-left: 85%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.829);
+    text-shadow: 4px 4px 10px rgb(12, 12, 12);
+    font-size: 17px;
+}

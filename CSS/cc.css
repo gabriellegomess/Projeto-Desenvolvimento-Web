@@ -1,0 +1,124 @@
+header {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor da fonte como branca */
+    background-image: url(../img/CC/footerHeader.jpeg);
+    margin-top: 20px;
+    padding: 15px;
+    height: 15vh;
+    border-radius: 5px;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 15px;   
+    
+}
+header a:hover{
+    color: white;/*fonte fica branca qnd o mouse passa por cima*/
+}
+header a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor da fonte como branca */
+}
+
+footer{
+    background-image: url(../img/CC/footerHeader.jpeg); /*imagem do footer*/
+    margin-top: 50px;
+    padding: 15px;
+    height: 15vh;
+    border-radius: 5px;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    color: red; /* Define a cor da fonte, por exemplo, vermelho */
+    
+}
+footer a:hover{
+    color: white;
+}
+
+footer a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor da fonte como branca */
+}
+
+li a{
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Define a cor da fonte como branca */
+}
+li{
+    list-style-type: none; /*tirando a bolinha da lista*/
+}
+
+body{
+    background-image: url(../img/CC/background.jpeg);
+    background-size: cover; /*tamhno*/
+    background-repeat: no-repeat; /*n repetir ao descer*/
+    background-attachment: fixed; /*n se mexer ao mover*/
+}
+
+/*organizando os h, p, fontes cores e as sombras*/
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 10px rgb(12, 12, 12);
+}
+h2{
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 10px rgb(12, 12, 12);
+}
+p{
+    color: rgb(238, 225, 225);
+    text-align: left;
+    text-shadow: 4px 4px 10px rgb(12, 12, 12);
+    font-size: 17px;
+}
+
+/*posicionamento das imagens*/
+.imagens{
+    display: grid; /*direcionar as imgs */
+    grid-template-columns: repeat(1, 5fr); /* Alterado para 5 colunas */
+    grid-gap: 10px;
+    height: 250px;
+    width: 200px;
+    margin-left: 10px;
+}
+.item {
+    display: flex; /* posição da imagem (esquerda)*/
+    align-items: left;
+    margin-bottom: 10px;
+  }
+
+.cc {
+    display: grid;/*direcionar as imgs Layout */
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas com largura igual */
+    grid-gap: 10px;
+    grid-gap: 10px;
+    height: 350px;
+    width: 400px; 
+    margin-left: 10px;
+} 
+
+/*organização das divs*/
+.div2{
+    margin: auto;
+    margin-left: 420px;
+}
+
+.div3{
+    margin: auto;
+    margin-left: 850px;
+}
+
+.div4{
+    margin: auto;
+    margin-left: 1280px;
+}
+
+/*cor de fundo e a borda*/
+.fundo{
+    background-color: rgba(245, 50, 50, 0.336);
+    border-radius: 5px;
+}
+
+
+  

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+
+    <!--importando o css da pagina-->
+    <link rel="stylesheet" href="../CSS/sobre.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+
+    
+<style>
+      /*CSS da mensagem secreta, a função rgb */
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 100px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        display: none; /* Inicia oculto */
+        /*animação rgb*/
+        animation-name: rgb;
+        animation-duration: 7s;
+        animation-delay: 0s; 
+        animation-iteration-count: infinite; 
+        color: black;
+    }
+
+    @keyframes rgb {
+        0% {
+    background-color: rgb(245, 233, 212);;
+    }
+        20%{
+    background-color: rgb(255, 217, 92);
+    }
+        40%{
+    background-color: rgb(167, 92, 236);
+    }
+        60%{
+        background-color: rgb(92, 236, 167);
+    }
+        80%{
+        background-color: rgb(235, 95, 95);
+    }
+        100%{
+        background-color: rgb(245, 233, 212);
+    }
+}
+
+/*Organizando o dark mode, mudando as configurações de cores de texto de fundo e as imagens*/
+
+.dark-mode body{
+    background-color: rgb(0, 0, 0);
+    color:rgb(240, 229, 229);
+    background-color: black;
+    color:rgb(240, 229, 229);
+    background-image: url(../img/paginas/fundoSobre.jpeg);
+    background-size: cover; /*tamhno*/
+    background-repeat: no-repeat; /*n repetir ao descer*/
+    background-attachment: fixed; /*n se mexer ao mover*/
+}
+
+.dark-mode div{
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.979);
+    color:rgb(240, 229, 229);
+    /* sombra pra direita, sombra pra baixo, fundo, cor  */
+    text-shadow: 2px 2px 4px rgba(247, 242, 242, 0.932);
+    border-radius: 20px;   
+}
+
+.dark-mode header{
+    background-color: rgb(139, 109, 223);
+    color:rgb(240, 229, 229);
+}
+
+.dark-mode main{
+    background-color: rgb(0, 0, 0);
+    color:rgb(240, 229, 229);
+    background-color: black;
+    color:rgb(240, 229, 229);
+    background-image: url(../img/paginas/fundoSobre.jpeg);
+    background-size: cover; /*tamhno*/
+    background-repeat: no-repeat; /*n repetir ao descer*/
+    background-attachment: fixed; /*n se mexer ao mover*/
+}
+
+.dark-mode body{
+    background-color: rgb(0, 0, 0);
+    color:rgb(240, 229, 229);
+    background-color: black;
+    color:rgb(240, 229, 229);
+    background-image: url(../img/paginas/fundoSobre.jpeg);
+    background-size: cover; /*tamhno*/
+    background-repeat: no-repeat; /*n repetir ao descer*/
+    background-attachment: fixed; /*n se mexer ao mover*/
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<!--importando o js da pagina-->
+    <script src="../JS/sobre.js"> </script>
+
+
+    <section>
+           <!--organizando o header da pagina--> 
+    <header>
+        <nav>
+            <a href="contato.html">📍 Contato 📍 </a>
+            <a href="index.html"> 📍 Home 📍 </a>
+        </nav>
+    </header>
+
+
+
+</section>
+<!--organizando as informações da pagina-->
+<main class="sobre">
+<!--Mensagem Secreta-->
+    <div class="popup" id="popupMensagem">
+        <img src="../img/paginas/stargit.gif" alt="gif de estrelas"  style="height: 100px;" width="150px">
+        <p>Parabéns você encontrou nossa Mensagem secreta na Transição!</p>
+        <p> Será que existem outras por ai?</p>
+        <img src="../img/paginas/gif.gif" alt="gif da mensagem" style="height: 100px;" width="150px">
+    </div>
+
+<!--Expandindo os requisitos do projeto com o js -->
+    <div class="expandable">
+            <div>
+
+                <h1 class="titulo" id="titulo">Projeto Final Desenvolvimento Web</h1>
+<article>
+            <h2> Objetivo</h2>
+            <p> O trabalho final visa demonstrar tudo que foi aprendido durante o desenvolvimento da disciplina em algo de seu interesse. Assim, seu objetivo é desenvolver um site sobre algo de seu interesse, seja um jogo, um esporte, um filme, ou um tema de seu gosto. Seu site deverá ser desenvolvido utilizando HTML, CSS e JavaScript puros, sem o uso de nenhum framework como Bootstrap, Angular, React, etc...</p>
+            <p> Seu projeto deve ser realizado individualmente,cumprindo alguns requisitos elencados abaixo: </p>
+
+        </div>
+
+     
+        <div>
+            <h1>Requisitos</h1>
+
+            <ul type="disk">
+                <li> Seu site deve apresentar ao menos 6 páginas com conteúdos eobjetivos distintos (home, contato, sobre nós, etc...)</li>
+                <li>Contato: Dentre as 6 páginas mínimas, deve existir uma página decontato, identificando quem é você (usada para dar nota depois). </li>
+                <li>CSS: Deve-se utilizar CSS externo, porém deve existir pelo menos um estilo interno e um inline. </li>
+                <li>Vídeo: Seu site deve apresentar ao menos 1 vídeo, seja local ou importado de sites como o YouTube.</li>
+                <li>Imagens: Seu site deve apresentar ao menos 5 figuras, ao menos 3 delas devem ser locais (estar na pasta do seu projeto).</li>
+                <li>Tabelas: Seu site deve apresentar ao menos 1 tabela.</li>
+                <li>Listas: Seu site deve apresentar ao menos 1 lista (nem que seja a domenu). </li>
+                <li>Menu: Deve existir um menu para transitar entre suas páginas.</li>
+                <li>Organização: Os arquivos devem estar organizados, com uma pasta para arquivos HTML, uma pasta para CSS, outra para JS, outra para imagens,etc...</li>
+                <li>Flex: O flex deve ser utilizado ao menos uma vez para posicionar seus elementos.</li>
+                <li>Grid: O grid deve ser utilizado ao menos uma vez para posicionar seus elementos.</li>
+                <li>Transições: Deve existir ao menos uma transição em seu site. (na dúvida implemente transições nos botões do menu).</li>
+                <li>Animações: Deve existir ao menos uma animação em seu site.</li>
+                <li>Responsividade: Seu site deve ser responsivo, funcionando para dispositivos de diferentes tamanhos. Considere o menor tamanho possível como 200px. (caso não seja possível, defina um tamanho mínimo e evite que o site quebre com menos que isso...)</li>
+                <li>Boas práticas: Seu código deve seguir as boas práticas, utilizar tagssemânticas e utilizar tags para definir as partes da página (header,main/section/article, aside, footer, ...)</li>
+                <li>Comentários: Seu código deve ser comentado para fácil compreensão.</li>
+                <li>Modelo BOX: É necessário utilizar ao menos uma vez (cada uma) daspropriedades do modelo BOX (width, height, padding, border e margin).</li>
+                <li>Modo escuro: Deve existir ao menos um botão para, utilizando JS, alterar as propriedades da página para um modo escuro (e depois voltar aomodo normal ao apertar novamente).</li>
+                <li>Easter egg: Deve existir ao menos 1 easter egg em sua página. Por exemplo, uma combinação de elementos que, se apertados em ordem,mostram alguma mensagem ou criam um novo elemento na página.</li>
+            </ul>
+</article>
+            
+
+        </div>
+        <a href="#menu"></a>
+    </main>
+
+    <!-- Css inline -->
+    <div>
+        <h3 style="text-align: center;"> Boa sorte!</h3>
+    </div>
+
+    <!--organizando o footer-->
+    <footer>
+        <br><br>
+        <a href="index.html" > 📍 Home 📍 </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contato.html" >📍 Contato 📍 </a> 
+    </footer>
+
+    <!--importando o js da pagina-->
+<button onclick="toggleDarkMode()">! ALTERNAR MODO !</button>
+<script src="../JS/sobre.js"> </script>
+
+    <!--organizando o script interno da pagina, no qual tem as mensagens secretas-->
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() { 
+            var titulo = document.querySelector('h3'); // Seleciona o elemento <h3> e o armazena na variável 'titulo'
+            var popup = document.getElementById('popupMensagem'); // Recupera o elemento com o ID 'popupMensagem' e o armazena na variável 'popup'
+
+            titulo.addEventListener('click', function() {
+                popup.style.display = 'block'; // Exibe o popup ao clicar no título
+            });
+
+            popup.addEventListener('click', function() {
+                popup.style.display = 'none'; // Oculta o popup ao clicar nele
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>

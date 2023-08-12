@@ -1,0 +1,17 @@
+A Responsividade começa do menor para o maior, o maior sempre no final para ser o ultimo a rodar
+
+● CSS inline no index.html aproximadamente na linha 222 e no sobre.html 133
+● Css interno no contato.html 
+● Grid no css de acotar.css e cc.css
+● Flex no css de cc 
+● Transição nos requisitos do projeto 
+● Animação nas mensagens secretas e no header
+● Vídeo no shadow.html
+
+
+Flex: lida com o posicionamento dos elementos ao longo de um único eixo (horizontal ou vertical) de cada vez, criar layouts simples e alinhar elementos em uma única dimensão, como barras de navegação, listas e seções de conteúdo em uma página.
+Grid: lida com o posicionamento dos elementos em duas dimensões: linhas e colunas, criar layouts mais complexos, como grades de imagens, layouts de grade fixa e designs que requerem controle preciso sobre o posicionamento dos elementos.
+Article: Contéudo da página 
+Aside: Conteúdo na barra lateral
+
+Obs: apagar a pag do jogo antes de enviar - deu meio errado e não to conseguindo arrumar

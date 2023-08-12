@@ -1,0 +1,71 @@
+/*organizando o css global*/
+/*header com a animação rgb infinita*/
+header{
+    margin-top: 20px;
+    margin-left: 1px; 
+    margin-right: 1px;
+    height: 15vh;
+    animation-name: rgb; /*nome da animação*/
+    animation-duration: 7s;
+    animation-delay: 0s; 
+    animation-iteration-count: infinite; /*animação loop*/
+    border-radius: 80px;
+    font-size: x-large;
+    text-align: center;
+}
+
+/*animação mudando de cor*/
+@keyframes rgb {
+    0% {
+        background-color: rgb(245, 233, 212);;
+    }
+    20%{
+        background-color: rgb(255, 217, 92);
+    }
+    40%{
+        background-color: rgb(167, 92, 236);
+    }
+    60%{
+        background-color: rgb(92, 236, 167);
+    }
+    80%{
+        background-color: rgb(235, 95, 95);
+    }
+    100%{
+        background-color: rgb(245, 233, 212);
+    }
+} 
+
+/*altura e largura das iamgens globalmente*/
+img{
+    height: 400px;
+    width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-style:italic;
+  }
+
+  /*definindo um footer global, com a animação footer, em loop*/
+footer{
+    background-color: rgba(193, 241, 231, 0.644);
+    margin-top: 50px;
+    padding: 15px;
+    height: 15vh;
+    border-radius: 5px;
+    animation-name: footer;
+    animation-duration: 5s;
+    animation-delay: 0s; 
+    animation-iteration-count: infinite; 
+    font-size: x-large;
+    text-align: center;
+}
+
+footer a:hover{
+    color: white; /*fonte fica branca qnd o mouse ta em cima*/
+}
+
+
+

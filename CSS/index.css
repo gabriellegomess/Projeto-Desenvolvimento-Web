@@ -1,0 +1,96 @@
+
+@media screen and (min-width: 200px) {
+    body {
+      background-image: url(../img/paginas/backgourndMagia.jpeg);
+    }
+  }
+
+
+@media screen and (min-width: 325) and (max-width: 425px) {
+    body {
+      background-image: url(../img/paginas/backgourndMagia.jpeg);
+    }
+  }
+  
+
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    body {
+      background-image: url(../img/paginas/backgourndMagia.jpeg);
+    }
+  }
+  
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+      background-image: url(../img/paginas/backgourndMagia.jpeg);
+    }
+  }
+  
+
+  @media screen and (min-width: 1025px) {
+    body {
+      background-image: url(../img/paginas/backgourndMagia.jpeg);
+    }
+  }
+  
+  /* Organizando as divs, cores, tamanhos, posicionamentos e alinhamentos, sombras e bordas */
+  div {
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(14, 62, 102, 0.705);
+    color: rgba(240, 248, 255, 0.842);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+  }
+  
+  /* Tamanho e posicionamento */
+  li {
+    text-align: left;
+    font-size: medium;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Cor, sombra e fundo da classe genero */
+  .genero {
+    background-color: rgba(14, 62, 102, 0.705);
+    color: rgba(240, 248, 255, 0.842);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Definindo as propriedades do botao e animação que ele vai receber */
+  button {
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: aqua;
+    animation-name: botao;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Animação do botao */
+  @keyframes botao {
+    0% {
+      background-color: rgb(104, 211, 243);
+    }
+    20% {
+      background-color: rgb(32, 190, 238);
+    }
+    40% {
+      background-color: rgb(32, 104, 238);
+    }
+    60% {
+      background-color: rgb(190, 32, 238);
+    }
+    80% {
+      background-color: rgb(207, 92, 241);
+    }
+    100% {
+      background-color: rgb(215, 147, 236);
+    }
+  }
+  

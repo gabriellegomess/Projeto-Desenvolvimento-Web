@@ -1,0 +1,64 @@
+<!-- apagar essa pagina antes de enviar-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+</head>
+<body>
+    <!-- Título da página -->
+    <title>Joguinho com o Mouse</title>
+
+    <!-- Estilos CSS -->
+    <style>
+      #objeto {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+      }
+
+      body{
+        background-color: rgb(8, 8, 8);
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Elemento do jogo -->
+    <div id="objeto"></div>
+  
+    <!-- Script -->
+    <script>
+   
+      var objeto = document.getElementById('objeto'); // pega elemento do objeto do jogo pelo id objeto da div
+      var BotaoMouse = false;//controlar se o botão do mouse está pressionado ou não
+
+      // Evento para quando o botão do mouse é pressionado
+      objeto.addEventListener('mousedown', function() {
+        BotaoMouse = true; // ativar que esta pressionado
+      });
+
+      // Evento para quando o botão do mouse é solto
+      objeto.addEventListener('mouseup', function() {
+        BotaoMouse = false; //voltar a ser false
+      });
+
+      // Evento para quando o mouse é movido para cima do objeto
+      objeto.addEventListener('mousemove', function(event) {
+        // Verifica se o botão do mouse está pressionado
+        if (BotaoMouse) {
+          // Obtém as coordenadas do mouse em relação à janela do navegador
+          var mouseX = event.clientX;
+          var mouseY = event.clientY;
+
+          // Define as coordenadas do objeto do jogo para as coordenadas do mouse
+          objeto.style.left = mouseX + 'px';
+          objeto.style.top = mouseY + 'px';
+        }
+      });
+    </script>
+</body>
+</html>

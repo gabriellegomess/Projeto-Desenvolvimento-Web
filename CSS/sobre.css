@@ -1,0 +1,38 @@
+/*definindo as propriedades da classe sobre*/
+.sobre{
+    border: 2px black solid;
+    margin-top: 50px;
+    text-align: justify;
+    justify-content: center;
+    font-size: 17px;
+}
+
+/*definindo as propriedades do h e do p*/
+h1,h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+/*definindo as propriedades da transição que expande*/
+.expandable ul {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, opacity 0.5s;
+  }
+  
+  .expandable.expanded ul {
+    visibility: visible;
+    max-height: 500px; /* ajuste a altura máxima desejada */
+    opacity: 1;
+  }
+
+  body{
+    background-color: rgba(248, 233, 165, 0.5); /* Cor de fundo com opacidade de 0.5 */
+    
+  }
+

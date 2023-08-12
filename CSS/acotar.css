@@ -1,0 +1,210 @@
+/* Responsivo para tela com largura mínima de 425px */
+@media screen and (min-width: 425px) {
+  header {
+    height: 10vh; /* altura */
+    margin-left: 10px; /* distancia da margem */
+    margin-right: 10px; /* distancia da margem */
+  }
+
+  div {
+    font-size: 15px; /* tamanho da fonte */
+  }
+
+  .intro,
+  li {
+    font-size: 15px; /* tamanho da fonte */
+  }
+
+  .imagens {
+    display: block;
+    height: 200px; /* altura */
+    width: 150px; /* largura */
+    margin-bottom: 10px; /* espaço entre as imagens */
+  }
+}
+
+  
+  /* Responsivo para tela com largura mínima de 426px e largura máxima de 768px */
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    header {
+      height: 8vh; /* altura */
+      margin-left: 15px; /* distancia da margem */
+      margin-right: 15px; /* distancia da margem */
+    }
+  
+    div {
+      font-size: 14px; /* tamanho da fonte */
+    }
+  
+    .intro,
+    li {
+      font-size: 14px; /* tamanho da fonte */
+    }
+  
+    .imagens {
+      height: 180px; /* altura */
+      width: 120px; /* largura */
+    }
+  }
+  
+  /* Responsivo para tela com largura mínima de 769px e largura máxima de 1024px */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+      height: 6vh; /* altura */
+      margin-left: 20px; /* distancia da margem */
+      margin-right: 20px; /* distancia da margem */
+    }
+  
+    div {
+      font-size: 13px; /* tamanho da fonte */
+    }
+  
+    .intro,
+    li {
+      font-size: 13px; /* tamanho da fonte */
+    }
+  
+    .imagens {
+      height: 150px; /* altura */
+      width: 100px; /* largura */
+    }
+  }
+  
+  /* Responsivo para tela com largura mínima de 1025px */
+  @media screen and (min-width: 1025px) {
+    header {
+      height: 15vh; /* altura */
+      margin-left: 5px; /* distancia da margem */
+      margin-right: 5px; /* distancia da margem */
+    }
+  
+    div {
+      font-size: 17px; /* tamanho da fonte */
+    }
+  
+    .intro,
+    li {
+      font-size: 20px; /* tamanho da fonte */
+    }
+  
+    .imagens {
+      height: 250px; /* altura */
+      width: 200px; /* largura */
+    }
+  }
+  
+  header {
+    margin-top: 10px; /* margem */
+    padding: 10px; /* distancia entre o elemento e a borda */
+    animation-name: acotar; /* chamando a animação */
+    animation-duration: 5s; /* definindo a duração da animação */
+    animation-delay: 0s; /* delay ate iniciar */
+    border-radius: 5px; /* borda */
+    font-size: x-large; /* tamanho da fonte */
+    text-align: center; /* centralizando os texto */
+    background-color: rgba(122, 61, 236, 0.575); /* cor de fundo */
+    background-image: url(../img/ACOTAR/header.jpeg); /* imagem de fundo */
+    background-size: cover; /* tamanho inteiro */
+    background-repeat: no-repeat; /* nao repetir a imagem */
+    background-attachment: fixed; /* deixar a imagem fixada */
+  }
+  
+  header nav a {
+    margin-right: 20px; /* Espaçamento direito entre os links */
+  }
+  
+
+  @keyframes acotar {
+    0% {
+      background-color: rgba(122, 61, 236, 0.575);
+    }
+    100% {
+      background-color: rgba(129, 69, 241, 0.575);
+    }
+  }
+  
+  .acotar {
+    visibility: visible;
+  }
+  
+  body {
+    background-image: url(../img/acotar/background.jpeg);
+    background-size: cover; /* tamanho */
+    background-repeat: no-repeat; /* n repetir img */
+    background-attachment: fixed; /* img parada */
+  }
+  
+  div {
+    text-align: center; /* posição do texto */
+    justify-content: center; /* conteudo no centro */
+    color: rgb(2, 2, 2); /* cor da div */
+    text-shadow: 2px 2px 4px rgba(243, 238, 238, 0.884); /* cor das sombras */
+    border-radius: 20px; /* borda */
+    font-size: 17px; /* tamanho fonte */
+  }
+  
+  .intro {
+    text-align: left;
+    font-size: medium;
+    font-size: 17px;
+  }
+  
+  li {
+    text-align: left;
+    font-size: medium;
+    font-size: 20px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 17px;
+  }
+  
+  .imagens {
+    /* posicionamento das img */
+    display: grid; /* organizar o layout das img */
+    grid-template-columns: repeat(1, 5fr); /* Alterado para 5 colunas */
+    grid-gap: 10px;
+    /* largura e altura das img */
+    height: 250px;
+    width: 200px;
+  }
+  
+  footer {
+    background-color: rgba(217, 171, 248, 0.644); /* cor */
+    margin-top: 50px; /* espaçamento */
+    padding: 15px; /* espaçamento elemtnos */
+    height: 15vh;
+    border-radius: 5px;
+    animation-name: footer; /* chamando a animaçao do footer */
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /* animação infinita */
+    font-size: x-large;
+    text-align: center;
+  }
+  
+  footer a:hover {
+    color: white; /* fonte ficar branca qnd o mouse passar por cima */
+  }
+  
+  /* ordem dos livros */
+  .item {
+    display: flex; /*direcionar onde vai ficar */
+    align-items: left;
+    margin-bottom: 10px;
+  }
+  
+  .imagens {
+    margin-left: 10px;
+  }
+  
+  /* Arrumando as listas */
+  ol {
+    text-align: left;
+  }
+  
+  ul {
+    text-align: left;
+  }
+  
